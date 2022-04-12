@@ -46,6 +46,7 @@ const PokemonList = () => {
           name="description"
           content="Show a list of Pokemons' names and the owned total."
         />
+        <link rel="shortcut icon" href="/assets/pokeball.png" />
       </Head>
       <main className={styles.main}>
         <PageTitle>My Pokemon List </PageTitle>

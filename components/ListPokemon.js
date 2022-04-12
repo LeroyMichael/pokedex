@@ -39,8 +39,8 @@ const CardDetail = styled.div`
   justify-content: space-evenly;
   text-transform: capitalize;
   position: absolute;
-  padding: 2.5rem;
-  margin-left: 5.5rem;
+  padding: 1.9rem;
+  margin-left: 6rem;
   z-index: 2;
 `;
 const PokemonOwned = styled(Image)`
@@ -71,6 +71,10 @@ const TrashButtonContainer = styled.a`
   cursor: pointer;
 `;
 
+const PaddingContainer = styled.div`
+  margin: 0.6rem;
+`;
+
 const TrashButton = styled(Image)``;
 
 const ListPokemon = ({ pokemons }) => {
@@ -84,7 +88,7 @@ const ListPokemon = ({ pokemons }) => {
   }, []);
 
   const release = (pokemonId) => {
-    pokemons.results.splice(pokemonId, pokemonId + 1);
+    pokemons.results.splice(pokemonId, pokemonId);
     setOwnedPokemons({ pokemons: pokemons.results });
     localStorage.setItem(
       "myPokemons",
@@ -128,6 +132,7 @@ const ListPokemon = ({ pokemons }) => {
                         ownedPokemons.pokemons.filter((e) => e.id == pokemon.id)
                           .length}
                   </h3>
+                  <PaddingContainer></PaddingContainer>
                   <h2>{pokemon.nickname ? pokemon.nickname : pokemon.name}</h2>
                 </CardDetail>
               </CardLeft>

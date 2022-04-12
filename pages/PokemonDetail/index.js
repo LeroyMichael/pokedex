@@ -94,6 +94,10 @@ const LoadingBar = styled.div`
   height: 100%;
 `;
 
+const Scrollbar = styled.div`
+  overflow-y: auto;
+`;
+
 const PokemonDetail = () => {
   const router = useRouter();
   const pokemonName = router.query.name;
@@ -223,6 +227,8 @@ const PokemonDetail = () => {
           name="description"
           content="Show a list of Pokemons' names and the owned total."
         />
+
+        <link rel="shortcut icon" href="/assets/pokeball.png" />
       </Head>
       <main>
         <div css="resetScrollbar">
@@ -281,21 +287,23 @@ const PokemonDetail = () => {
                   width="100px"
                 ></CatchPokemon>
               ) : (
-                <PokemonData>
-                  <h5>Abilities</h5>
-                  <AbilitiesContainer>
-                    {abilities.map((ability, i) => (
-                      <p key={i}>{ability.ability.name}</p>
-                    ))}
-                  </AbilitiesContainer>
+                <Scrollbar>
+                  <PokemonData>
+                    <h5>Abilities</h5>
+                    <AbilitiesContainer>
+                      {abilities.map((ability, i) => (
+                        <p key={i}>{ability.ability.name}</p>
+                      ))}
+                    </AbilitiesContainer>
 
-                  <h5>Moves</h5>
-                  <AbilitiesContainer>
-                    {moves.map((move, i) => (
-                      <p key={i}>{move}</p>
-                    ))}
-                  </AbilitiesContainer>
-                </PokemonData>
+                    <h5>Moves</h5>
+                    <AbilitiesContainer>
+                      {moves.map((move, i) => (
+                        <p key={i}>{move}</p>
+                      ))}
+                    </AbilitiesContainer>
+                  </PokemonData>
+                </Scrollbar>
               )}
               {errorMessage ? (
                 <ErrorMessage>{errorMessage}</ErrorMessage>
