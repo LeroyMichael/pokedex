@@ -284,15 +284,15 @@ const PokemonDetail = () => {
                 <PokemonData>
                   <h5>Abilities</h5>
                   <AbilitiesContainer>
-                    {abilities.map((ability) => (
-                      <p>{ability.ability.name}</p>
+                    {abilities.map((ability, i) => (
+                      <p key={i}>{ability.ability.name}</p>
                     ))}
                   </AbilitiesContainer>
 
                   <h5>Moves</h5>
                   <AbilitiesContainer>
-                    {moves.map((move) => (
-                      <p>{move}</p>
+                    {moves.map((move, i) => (
+                      <p key={i}>{move}</p>
                     ))}
                   </AbilitiesContainer>
                 </PokemonData>
