@@ -246,8 +246,8 @@ const PokemonDetail = () => {
                 alt={pokemon.name}
               />
               <PokemonTypes>
-                {types.map((type) => (
-                  <BadgeComponent pokemonType={type}></BadgeComponent>
+                {types.map((type, i) => (
+                  <BadgeComponent key={i} pokemonType={type}></BadgeComponent>
                 ))}
               </PokemonTypes>
               {catchState === "success" ? (
