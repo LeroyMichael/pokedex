@@ -94,7 +94,7 @@ const LoadingBar = styled.div`
   height: 100%;
 `;
 
-const index = () => {
+const Index = () => {
   const router = useRouter();
   const pokemonName = router.query.name;
   const [pokemon, setPokemon] = useState({});
@@ -320,4 +320,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
