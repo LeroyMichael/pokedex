@@ -25,7 +25,7 @@ const PageTitle = styled.h1`
   margin-top: 1.5em;
 `;
 
-const Index = () => {
+const PokemonList = () => {
   const [isSearching, setIsSearching] = useState(false);
   const [statePokemons, setStatePokemons] = useState({});
   useEffect(() => {
@@ -72,4 +72,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default PokemonList;
