@@ -61,7 +61,7 @@
 
 .grid {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1000px;
