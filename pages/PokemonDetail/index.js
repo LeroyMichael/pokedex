@@ -34,8 +34,6 @@ const PokemonData = styled.div`
   padding: 2rem 0rem;
   flex-direction: column;
   box-shadow: 0.2rem 0.2rem ${colors.grayDark};
-  overflow-y: auto;
-  height: 100%;
 `;
 
 const CatchPokemonContainer = styled.div`
