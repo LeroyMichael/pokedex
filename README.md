@@ -47,11 +47,11 @@ I'm using graphql to get the list of Pokemons and pokemon details, you can see i
 I think that's all that I need to mention, it was a fun project to learn more about next.js, graphql, and emotion.sh. I hope you are enjoying the app as much as I do :).
 
 
-Credits:
-Pokemon GraphQL - https://github.com/mazipan/graphql-pokeapi by Irfan Maulana
-Pokeball - https://www.kindpng.com/imgv/JTRwwh_pokeball-pixel-png-png-download-pokeball-pixel-art/ by Joonwon Yoon
-Design Inspiration - https://www.artstation.com/artwork/v25GNv by Pau Esparó
-Project idea - Tokopedia recruiter
+Credits: <br />
+Pokemon GraphQL - https://github.com/mazipan/graphql-pokeapi by Irfan Maulana <br />
+Pokeball - https://www.kindpng.com/imgv/JTRwwh_pokeball-pixel-png-png-download-pokeball-pixel-art/ by Joonwon Yoon <br />
+Design Inspiration - https://www.artstation.com/artwork/v25GNv by Pau Esparó <br />
+Project idea - Tokopedia recruiter <br />
 
 
 
